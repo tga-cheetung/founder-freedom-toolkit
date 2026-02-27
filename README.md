@@ -1,50 +1,48 @@
 # Founder Freedom Toolkit
 
-**5 AI skills that give B2B founders 10 hours back every week.**
+**5 AI skills that help B2B founders stop being the bottleneck.**
 
-Built by [The GTM Architects](https://www.thegtmarchitects.com) — building AI-powered growth systems for scaling B2B companies.
+Built by [The GTM Architects](https://www.thegtmarchitects.com) — turning founder-led sales into a GTM system you can scale and hand off.
 
 ---
 
 ## The Problem
 
-You're a B2B founder past product-market fit. Product sells. Referrals close. You have paying customers and proof it works. But *you* are the bottleneck.
+You're a B2B founder past product-market fit. $500K–$5M ARR. Paying customers. Proof it works. But *you* are the ceiling.
 
-You're the sales team, the marketing brain, and the strategy department. Every deal, every campaign, every follow-up runs through you. The playbook only exists in your head — which means every new hire starts from zero, every week without you in the seat costs pipeline, and growth is capped at whatever your personal bandwidth allows.
+You're the sales process, the follow-up system, the onboarding, and the closer. Every deal runs through you because nothing is written down anywhere else. You've thought about hiring — but the last time you tried, it didn't work out. The playbook only exists in your head, which means every new hire starts from zero, every week without you in the seat costs pipeline, and growth is capped at your personal bandwidth.
 
-Revenue growth isn't a product problem. It's a founder-dependency problem.
+This isn't a product problem. It's a founder-dependency problem.
 
-The Founder Freedom Toolkit attacks the 5 biggest GTM time drains keeping you stuck in the operator seat.
+The Founder Freedom Toolkit is five tools that attack the root causes — one at a time.
 
 ---
 
 ## The 5 Skills
 
-| # | Skill | Time Drain It Kills | Est. Hours Saved/Week |
-|---|---|---|---|
-| 1 | **Founder Freedom Finder** | Trying to figure out what's actually broken in your GTM | ~1.5 hrs |
-| 2 | **AI Sales Coach** | Reviewing calls, coaching yourself, second-guessing your pitch | ~2 hrs |
-| 3 | **Cold Email Roast** | Rewriting outbound, guessing why replies dried up | ~2 hrs |
-| 4 | **Content Engine** | Creating content from scratch — one topic should be a week of posts | ~3 hrs |
-| 5 | **Landing Page CRO** | Staring at analytics wondering why traffic isn't converting | ~2 hrs |
-
-**Total: ~10.5 hours per week redirected from guessing to building.**
+| # | Skill | The Job It Does |
+|---|---|---|
+| 1 | **Founder Freedom Finder** | Diagnose where your GTM is leaking and why you can't scale |
+| 2 | **Sales Process Extractor** | Extract your sales process from your head into a one-pager + SOP gaps |
+| 3 | **Founder GTM Time Map** | Map where your GTM hours go and what each one costs in real dollars |
+| 4 | **First Hire Readiness Scorecard** | Decide if you're ready to hire, what to hire, and what to build first |
+| 5 | **Proposal & Follow-Up Template Kit** | Build a proposal template, follow-up sequence, and objection cheat sheet |
 
 ---
 
 ## The System Logic
 
-These aren't random tools. They follow a specific sequence:
+These tools follow a specific sequence — each one builds on the last:
 
-1. **Find the bottleneck** — Stop guessing. Score your GTM across 6 dimensions. Know your #1 blocker in 8 minutes.
-2. **Fix your pitch** — Your sales conversations are your highest-leverage activity. Make every one count.
-3. **Fix your outbound** — You're sending emails that don't work. Find out why and get rewrites that do.
-4. **Build your authority** — Turn one topic into a blog post + 6 LinkedIn posts. One idea = one week of content.
-5. **Fix your funnel** — You're paying for traffic. Make sure your page converts it.
+1. **Diagnose** — Know exactly which dimensions of your GTM are broken and why. Score your situation across 6 dimensions in 8 minutes.
+2. **Extract** — Get your sales process out of your head and onto a page. You can't systematize what isn't written down.
+3. **Map the cost** — See exactly where your time goes and what each hour of the wrong work costs you. Dollar-denominated.
+4. **Decide on hiring** — Armed with your process audit and time map, know whether you're ready to hire, what to hire, and what needs to exist before the hire walks in the door.
+5. **Build the templates** — Proposals that take 20 minutes instead of 3 hours. Follow-up sequences that run without you. Objection responses that close.
 
-**The arc: Diagnose → Improve conversations → Improve outbound → Build authority → Convert traffic.**
+**The arc: Diagnose → Document → Quantify → Decide → Execute.**
 
-Each skill is a standalone win. Together they take GTM diagnosis and optimization off your plate.
+Each skill is a standalone win. Together they move you from "everything runs through me" to "I have a system worth handing off."
 
 ---
 
@@ -57,17 +55,17 @@ founder-freedom-toolkit/
 ├── README.md
 ├── founder-freedom-finder/
 │   └── SKILL.md
-├── ai-sales-coach/
+├── sales-process-extractor/
 │   └── SKILL.md
-├── cold-email-roast/
+├── founder-gtm-time-map/
 │   └── SKILL.md
-├── content-engine/
+├── first-hire-readiness-scorecard/
 │   └── SKILL.md
-└── landing-page-cro/
+└── proposal-follow-up-template-kit/
     └── SKILL.md
 ```
 
-Each `SKILL.md` contains YAML frontmatter (`name`, `description`, optional `argument-hint`) followed by the full skill prompt.
+Each `SKILL.md` contains YAML frontmatter (`name`, `description`) followed by the full skill prompt.
 
 ---
 
@@ -96,24 +94,24 @@ cp -r founder-freedom-toolkit/*/ ~/.claude/skills/
 **Option 3: Install a single skill**
 
 ```bash
-cp -r founder-freedom-toolkit/cold-email-roast ~/.claude/skills/
+cp -r founder-freedom-toolkit/sales-process-extractor ~/.claude/skills/
 ```
 
 **Option 4: Install into a specific project**
 
 ```bash
 mkdir -p /path/to/your-project/.claude/skills
-cp -r founder-freedom-toolkit/cold-email-roast /path/to/your-project/.claude/skills/
+cp -r founder-freedom-toolkit/proposal-follow-up-template-kit /path/to/your-project/.claude/skills/
 ```
 
 **Invoke with:**
 
 ```
 /founder-freedom-finder
-/ai-sales-coach
-/cold-email-roast
-/content-engine "[topic] for [audience]"
-/landing-page-cro
+/sales-process-extractor
+/founder-gtm-time-map
+/first-hire-readiness-scorecard
+/proposal-follow-up-template-kit
 ```
 
 ---
@@ -126,11 +124,11 @@ Each `SKILL.md` file works as a standalone system prompt. Open the skill file, c
 
 **Permanent setup (Projects — recommended):**
 1. Go to [claude.ai](https://claude.ai) → **Projects** → **New Project**
-2. Name it after the skill (e.g. "Cold Email Roast")
+2. Name it after the skill (e.g. "Sales Process Extractor")
 3. Click **Set project instructions** → paste the full contents of the `SKILL.md` file
 4. Every conversation in that project now runs the skill automatically
 
-> Tip: Create one project per skill, or combine all 5 into a single "Founder Freedom Toolkit" project by pasting all the files end-to-end.
+> Tip: Create one project per skill, or combine the full toolkit into a single "Founder Freedom Toolkit" project by pasting all five files end-to-end.
 
 **One-off use:**
 1. Start a new conversation
@@ -152,14 +150,12 @@ Each `SKILL.md` file works as a standalone system prompt. Open the skill file, c
 2. Paste the full file contents as your first message
 3. Active for that conversation only
 
-> Note: ChatGPT also supports persistent custom instructions under **Settings → Personalization → Custom Instructions**, but this applies to all chats — better to use a Custom GPT for skill-specific behavior.
-
 ---
 
 #### Google Gemini
 
 **Permanent setup (Gems):**
-1. Go to [gemini.google.com](https://gemini.google.com) → **Gems** → **New Gem** (or **Gem Manager**)
+1. Go to [gemini.google.com](https://gemini.google.com) → **Gems** → **New Gem**
 2. Paste the full `SKILL.md` file contents into the instructions field
 3. Save → accessible from your Gems list
 
@@ -171,7 +167,7 @@ Each `SKILL.md` file works as a standalone system prompt. Open the skill file, c
 
 #### Perplexity, Copilot Chat, and other web LLMs
 
-No persistent system prompt support in most of these interfaces. Paste the full file contents as your opening message. The skill is active for that conversation.
+No persistent system prompt support in most interfaces. Paste the full file contents as your opening message. The skill is active for that conversation.
 
 ---
 
@@ -183,20 +179,19 @@ No persistent system prompt support in most of these interfaces. Paste the full 
 
 ```bash
 mkdir -p .cursor/rules
-cp cold-email-roast/SKILL.md .cursor/rules/cold-email-roast.mdc
+cp sales-process-extractor/SKILL.md .cursor/rules/sales-process-extractor.mdc
 ```
 
-Cursor will pick up `.mdc` files from `.cursor/rules/` automatically. Add a front-matter block at the top of the file to control when it activates:
+Add a front-matter block at the top to control when it activates:
 
 ```
 ---
 alwaysApply: false
-description: "Roast and rewrite cold emails"
+description: "Extract sales process into documented one-pager"
 ---
 ```
 
-**Global rules (applies to all projects):**
-Go to **Cursor Settings → Rules for AI** → paste the skill content.
+**Global rules:** Go to **Cursor Settings → Rules for AI** → paste the skill content.
 
 ---
 
@@ -205,60 +200,34 @@ Go to **Cursor Settings → Rules for AI** → paste the skill content.
 **Project-level rules:**
 
 ```bash
-cp cold-email-roast/SKILL.md .windsurfrules
+cp founder-freedom-finder/SKILL.md .windsurfrules
 ```
 
-Or for multiple skills, append them:
+Or append multiple skills:
 
 ```bash
-cat founder-freedom-finder/SKILL.md cold-email-roast/SKILL.md >> .windsurfrules
+cat founder-freedom-finder/SKILL.md sales-process-extractor/SKILL.md >> .windsurfrules
 ```
 
-**Global rules:**
-Go to **Windsurf Settings → AI → Global Rules** → paste the skill content.
+**Global rules:** Go to **Windsurf Settings → AI → Global Rules** → paste the skill content.
 
 ---
 
 #### GitHub Copilot (VS Code / JetBrains)
 
-Create a `.github/copilot-instructions.md` file in your repo root:
-
 ```bash
-cp cold-email-roast/SKILL.md .github/copilot-instructions.md
+cp founder-freedom-finder/SKILL.md .github/copilot-instructions.md
 ```
-
-Copilot will use these instructions for all interactions in that repository.
 
 ---
 
 #### Aider
 
-Pass the skill file as additional context at startup:
-
 ```bash
-aider --read cold-email-roast/SKILL.md
+aider --read sales-process-extractor/SKILL.md
+# or
+aider --system-prompt "$(cat founder-freedom-finder/SKILL.md)"
 ```
-
-Or set it as the system prompt:
-
-```bash
-aider --system-prompt "$(cat cold-email-roast/SKILL.md)"
-```
-
----
-
-#### Continue.dev
-
-Add to your `~/.continue/config.json` under `systemMessage`:
-
-```json
-{
-  "models": [...],
-  "systemMessage": "<paste skill content here>"
-}
-```
-
-Or reference the file directly if your Continue config supports file includes.
 
 ---
 
@@ -276,7 +245,6 @@ Or reference the file directly if your Continue config supports file includes.
 | Windsurf | `.windsurfrules` | Per project |
 | GitHub Copilot | `.github/copilot-instructions.md` | Per repo |
 | Aider | `--read skill/SKILL.md` | Per session |
-| Continue.dev | `config.json` systemMessage | Global |
 
 ---
 
@@ -284,69 +252,69 @@ Or reference the file directly if your Continue config supports file includes.
 
 ### `founder-freedom-finder`
 
-A 10-question conversational diagnostic across 6 GTM dimensions: founder dependency, pipeline visibility, follow-up systems, proof assets, conversion infrastructure, and outbound engine.
+A 10-question conversational diagnostic across 6 GTM dimensions: founder dependency, pipeline visibility, follow-up systems, proof assets, documented process, and delegation readiness.
 
-Outputs a **Founder Freedom Score (0–30)**, identifies your #1 root bottleneck, and gives one first move that's completable this week.
+Outputs a **Founder Freedom Score (0–30)**, identifies your pattern ("I am the system," "Ready to hire, nothing to hand over," etc.), names the #1 root bottleneck, and gives one first move completable this week.
 
-**Use when:** "Why can't I scale?" / "Where's my GTM broken?" / "I feel like I'm the bottleneck but I don't know where to start."
-
----
-
-### `ai-sales-coach`
-
-Three modes detected automatically from your opening message:
-
-- **Mode A: Post-Call Debrief** — Paste a transcript and get a scored call debrief (25-point scorecard across 5 dimensions), 3 flagged moments with exact rewrites in your voice, one recurring pattern, and one homework assignment for the next call.
-- **Mode B: Deal Autopsy** — Describe a lost deal and get the stage of death, the turning point, 2 moves that would have changed it, and dollar impact where quantifiable.
-- **Mode C: Objection Drill** — Ask how to handle a specific objection and get a 3-round live drill with 3 response options: direct, reframe, and question-back.
-
-**Use when:** You just got off a call / a deal went dark / you keep getting the same objection and don't know what to say.
+**Use when:** "Why can't I scale?" / "I'm the bottleneck but don't know where to start" / "What should I fix first?"
 
 ---
 
-### `cold-email-roast`
+### `sales-process-extractor`
 
-Scans for Dirty Dozen violations (the phrases that signal mass template before the prospect reads a word), then roasts in reading order: subject line → opener → body → CTA.
+A guided conversation that pulls your sales process out of your head — not how you think you sell, how you actually sell — and turns it into a structured one-page process map.
 
-Outputs a **Roast Score** with Dirty Dozen hit count, word count, subject/opener/CTA pass-fail, and reply rate estimate. Delivers a full rewrite under 80 words using one of 4 valid CTA types.
+Outputs: your **Sales Process Map** (stage-by-stage, in your own language), an **SOP Gap Analysis** (what's documented vs. in your head vs. ad hoc), and your **Top 3 SOPs to Build First** with a starter outline for each.
 
-**Use when:** Replies have dried up / you want feedback before sending a new sequence / you're reviewing an existing campaign that isn't performing.
-
----
-
-### `content-engine`
-
-Takes a topic, audience, and one-line take. Runs a 3-gate workflow — you approve each stage before the next begins:
-
-1. **Gate 1:** 3 angle options → you pick one
-2. **Gate 2:** Full 1,200–1,500 word blog post → you review and edit
-3. **Gate 3:** 6 LinkedIn posts in Justin Welsh style (teaser, announcement, framework, contrarian, case study, story)
-
-No external tools, no APIs, no stack dependencies. Works in claude.ai, Claude Code, or any LLM.
-
-**Use when:** "Write me a blog post about [topic]" / "I need content for this week" / "Turn this idea into LinkedIn posts."
+**Use when:** "It's all in my head" / "I couldn't hand my sales process to someone else" / "I need to document how we sell before I hire."
 
 ---
 
-### `landing-page-cro`
+### `founder-gtm-time-map`
 
-Starts with the 5-second test, then scores 7 dimensions: message match, above-the-fold, headline, CTA, trust signals, objection handling, and friction.
+A conversation where you estimate your weekly GTM time across activities. Even rough numbers are enough — founders have never quantified this, and even rough numbers are revealing.
 
-Outputs a **CRO Audit Score (0–35)** with conversion estimate, flags the 3 highest-cost elements with actual rewrites (not suggestions), and names the single highest-leverage fix.
+Outputs: a **Time Map** (each activity tagged 🟢 founder-essential / 🟡 systematizable / 🔴 should already be delegated), a **Dollar Map** (implied hourly rate, cost of each activity, total "trapped revenue"), and a **Delegation Roadmap** (ranked by hours freed, ease of systematization, and risk of delegation).
 
-**Use when:** "This page isn't converting" / you're running paid traffic to a page / you want to audit before a launch.
+**Use when:** "I can't get out of the weeds" / "Everything runs through me" / "I don't know what to delegate first."
+
+---
+
+### `first-hire-readiness-scorecard`
+
+A structured assessment across 5 dimensions: process readiness, pipeline predictability, economics, founder bandwidth, and role clarity. Includes the math on what a hire actually costs over 6 months.
+
+Outputs: a **Verdict** (🟢 Ready / 🟡 Almost / 🔴 Not Yet) with specific reasoning, a **Role Recommendation** (title, seniority, comp range, archetype, specific activities, 90-day success metrics), and a **Pre-Hire Checklist** with priority build order and timeline.
+
+**Use when:** "Should I hire a sales rep?" / "My last hire didn't work out" / "I don't know if I should hire marketing or sales first."
+
+---
+
+### `proposal-follow-up-template-kit`
+
+A 10-minute conversation that extracts your product, deal structure, buyer, objections, and best proof point. Then produces four ready-to-use artifacts in your voice.
+
+Outputs:
+- **Proposal Template** — one-page, price visible, buyer's language, takes 20 min to customize per deal
+- **Post-Demo Follow-Up Sequence** — 3 emails (same day, 3 days, 7 days), each under 100 words
+- **Gone-Dark Re-Engagement Sequence** — 3 emails for cold deals (check-in, new angle, breakup)
+- **Objection Handling Cheat Sheet** — top 3-5 objections with what they mean + example responses in your language
+
+**Use when:** "Proposals take forever" / "Deals go cold because I can't follow up fast enough" / "I lose deals to silence, not to competitors."
 
 ---
 
 ## About
 
-The GTM Architects build AI-powered growth systems for B2B founders who have proven product-market fit and are ready to scale past themselves. We work with founder-bottlenecked companies at $500K–$5M ARR — past survival mode, not yet at scale — who need a GTM system built, not just more emails sent.
+The GTM Architects turn founder-led sales into a GTM OS you can scale and hand off. We work with B2B founders at $500K–$5M ARR — past PMF, not yet at scale — who are the ceiling of their own growth because everything runs through them.
 
-This toolkit is the free layer.
+The toolkit is the free layer.
 
-The paid layer is the **5-day GTM Diagnostic** — stage-by-stage pipeline reconciliation, real attribution by channel, and a cascade model that puts dollar values on every funnel drop-off. The average recoverable ARR we find is between $180K and $400K. Most founders didn't know that number existed before we ran it.
+The paid layer is an **Extract + Systematize** engagement — we extract your sales process, systematize it into a full GTM OS (playbook, pipeline, attribution, onboarding), and hand it off so your first hire inherits a system instead of a prayer.
 
-**[→ Book a GTM Diagnostic](https://tidycal.com/cheetung/discovery)**
+The average time to complete: 30 days. The average founder hours reclaimed: 15–20 hours/week.
+
+**[→ Book a funnel mapping call](https://tidycal.com/cheetung/discovery)** — I'll bring 30 minutes of research on your business before we talk.
 
 ---
 
